@@ -82,6 +82,25 @@ Do not run `npm install` inside individual apps.
 
 ---
 
+## Configure ENV Variables:
+`Create a .env file in the project root and add the following:
+
+```
+PORT=3000
+FRONTEND_URL=http://localhost:5173
+```
+
+Variable Descriptions
+
+`PORT`
+The port on which the backend server will run.
+
+`FRONTEND_URL`
+The URL of the frontend application.
+Used for CORS configuration and client–server communication during development.
+
+---
+
 ## Development
 
 Run all development servers concurrently:
