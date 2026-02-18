@@ -90,7 +90,7 @@ PORT=3000
 FRONTEND_URL=http://localhost:5173
 ```
 
-Variable Descriptions
+Variable Descriptions:
 
 `PORT`
 The port on which the backend server will run.
