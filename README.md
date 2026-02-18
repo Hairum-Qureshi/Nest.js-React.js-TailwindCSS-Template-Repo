@@ -83,7 +83,7 @@ Do not run `npm install` inside individual apps.
 ---
 
 ## Configure ENV Variables:
-`Create a .env file in the project root and add the following:
+Create a .env file in the `apps/backend` directory and add the following:
 
 ```
 PORT=3000
