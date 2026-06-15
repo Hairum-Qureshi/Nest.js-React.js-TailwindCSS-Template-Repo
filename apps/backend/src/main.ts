@@ -12,7 +12,10 @@ async function bootstrap() {
     credentials: true,
   });
   
-  await app.listen(process.env.PORT ?? 3000);
-  console.log('Nest.js Server successfully started');
+  const configService = app.get(ConfigService);
+  const PORT = configService.get<number>('PORT') ?? 3000;
+  await app.listen(PORT);
+
+  console.log(`Nest.js Server successfully started on port ${PORT}`);
 }
 bootstrap();
