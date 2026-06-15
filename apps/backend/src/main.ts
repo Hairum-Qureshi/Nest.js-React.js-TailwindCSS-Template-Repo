@@ -16,6 +16,6 @@ async function bootstrap() {
   const PORT = configService.get<number>('PORT') ?? 3000;
   await app.listen(PORT);
 
-  console.log(`Nest.js Server successfully started on port ${PORT}`);
+  console.log(`Nest.js Server successfully started on port ${PORT}!`);
 }
 bootstrap();
